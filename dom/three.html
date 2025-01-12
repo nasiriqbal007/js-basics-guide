@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Learning</title>
+  
+</head>
+<body>
+    <ul class="languages">
+        <li>   Javascript
+        </li>
+            </ul>
+</body>
+<script>
+    // function addLang(lang) {
+    //     const li=document.createElement("li");
+    //     li.innerHTML=`${lang}`;
+    //     document.querySelector('.languages').appendChild(li);
+    // }
+    // addLang("python")
+
+    function addLang(lang) {
+        const li=document.createElement("li");
+li.appendChild(document.createTextNode(lang))
+           document.querySelector(".languages").appendChild(li)
+}
+    addLang("Dart");
+
+ const seclang=document.querySelector("li:nth-child(2)");
+ const newli=document.createElement("li")
+ newli.textContent="new text";
+ seclang.replaceWith(newli);
+
+
+ const rmlang=document.querySelector("li:last-child")
+ rmlang.remove()
+</script>
+</html>
