@@ -1,0 +1,32 @@
+/* Common styles for the buttons */
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 12px;
+}
+
+/* Individual button colors */
+#grey {
+    background-color: grey;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+/* Centering the content */
+.main-div {
+    text-align: center;
+}
