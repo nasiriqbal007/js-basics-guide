@@ -17,10 +17,15 @@ form.addEventListener("submit", function (e) {
 
             const uw= document.querySelector("#under");
             uw.innerHTML = `${bmi.toFixed(2)}`;
+            uw.style.color="yellow";
         } else if (bmi >= 18.5 && bmi <= 24.9) {
-            document.querySelector("#normal").innerHTML = `${bmi.toFixed(2)}`;
+           const normal = document.querySelector("#normal")
+           normal.innerHTML = `${bmi.toFixed(2)}`;
+           normal.style.color="green";
         } else if (bmi > 24.9) {
-            document.querySelector("#over").innerHTML = `${bmi.toFixed(2)}`;
+           const  over=document.querySelector("#over") 
+           over.innerHTML = `${bmi.toFixed(2)}`;
+           over.style.color="red"
         }
     }
     
