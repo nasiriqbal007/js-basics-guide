@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Qoute</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      h1 {
+        font-size: 2rem;
+        color: green;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: darkgreen;
+        margin-bottom: 1rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        background-color: green;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Qoute</h1>
+    <p id="qoute"></p>
+    <button onclick="generateQoute()">Generate</button>
+    <script src="index.js"></script>
+  </body>
+</html>
